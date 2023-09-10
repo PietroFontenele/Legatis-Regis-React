@@ -1,0 +1,62 @@
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .carousel-item.active {
+    opacity: 1;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+
+
+
+
+
+
+/* .Slide{
+    width:100%;
+    max-width:900px;
+    min-width:100vh;
+    align-items: center;
+    justify-content: center;
+    margin:auto 12em;
+    min-height:50vh;
+    
+}
+
+.inner{
+    display:flex;
+}
+.item {
+    min-width:400px;
+    padding: 14px;
+}
+
+.item img{
+    width:26em;
+    height:15em;
+    border-radius:12px;
+    pointer-events: none;
+}
+.carousel{
+    cursor:grab;
+    overflow:hidden;
+} */
