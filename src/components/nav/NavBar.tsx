@@ -2,7 +2,7 @@ import React from "react";
 import styles from './Nav.module.css';
 import menu from '../../IMGS/PNGs/menu.png'
 
-const NavBar = () => {
+export const NavBar = () => {
     return (
         <div className={styles.container_Nav}>
             <img src={menu} alt="" />
@@ -14,5 +14,3 @@ const NavBar = () => {
             </nav>
         </div>);
 };
-
-export default NavBar;

@@ -20,6 +20,11 @@
   width: 85%;
 }
 
+.spant{
+  display:none;
+}
+
+
 h2 {
   text-align: center;
 }

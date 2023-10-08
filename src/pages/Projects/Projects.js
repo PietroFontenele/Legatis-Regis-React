@@ -53,22 +53,21 @@ const Projects = () => {
     setCurrentIndex(0);
     setModalOpen(false);
   };
-
-
   const images = [
-    Project,
-    Project1,
-    Project2,
-    Project3,
-    Project4,
-    Project5,
-    Project6,
-    Project7,
-    Project8,
-    Project9,
-    ProjectX,
-    ProjectY,
-  ];
+           Project,
+           Project1,
+           Project2,
+           Project3,
+           Project4,
+           Project5,
+           Project6,
+           Project7,
+           Project8,
+           Project9,
+           ProjectX,
+           ProjectY,
+         ];
+
   // const handleShow = () => {
   //   setShowElement(img);
   // };
@@ -137,75 +136,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
-        //    const [ModalOpn, setModalOpn] = useState(false);
-
-        //    const Open = () => setOpener(true);
-        //    const Closen = () => setOpener(false);
-/* <div className='Modal'>
-    <Modal>
-        <h1></h1>
-    </Modal>
-    </div>
-
-    <div className='Modal'>
-    <Modal>
-        <h1></h1>
-    </Modal>
-    </div>
-
-    <div className='Modal'>
-    <Modal>
-        <h1></h1>
-    </Modal>
-    </div>
-    
-    <div className='Modal'>
-    <Modal>
-        <h1></h1>
-    </Modal>
-    </div>
-
-    <div className='Modal'>
-    <Modal>
-        <h1></h1>
-    </Modal>
-    </div>
-
-    <div className='Modal'>
-    <Modal>
-        <h1></h1>
-    </Modal>
-    </div>
-
-    <div className='Modal'>
-    <Modal>
-        <h1></h1>
-    </Modal>
-    </div>
-
-    <div className='Modal'>
-    <Modal>
-        <h1></h1>
-    </Modal>
-    </div>
-
-    <div className='Modal'>
-    <Modal>
-        <h1></h1>
-    </Modal>
-    </div>
-
-    <div className='Modal'>
-    <Modal>
-        <h1></h1>
-    </Modal>
-    </div>
-
-    <div className='Modal'>
-    <Modal>
-        <h1></h1>
-    </Modal>
-    </div>
-
- */

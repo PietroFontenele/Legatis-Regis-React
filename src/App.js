@@ -1,7 +1,5 @@
 //CSS´s
 import './App.css';
-import './light-theme.css';
-import './dark-theme.css';
 //dependemces
 import { useState } from 'react';
 //components
@@ -12,22 +10,14 @@ import Projects from './pages/Projects/Projects';
 import Lobu from './IMGS/Ramos-IMGS/ramo-lobinho4.jpeg';
 import Esco from './IMGS/Ramos-IMGS/ramo-escoteiro.jpeg';
 import Sen from './IMGS/Ramos-IMGS/ramo senior.jpeg';
+import { Menu } from './components/Menu/Menu';
 // import Gato from './download.jfif'
 // import Carous1 from './IMGS/Slide-IMGS/carousel-esc2edit.jpeg';
 // import Carous2 from './IMGS/Slide-IMGS/carousel-esc6.jpeg'
 
 
 function App() {
-  //Alterar o tema 
-  const [theme, setTheme] = useState('light');
-
-  const toggleTheme = () => {
-    if (theme === 'light') {
-      setTheme('dark');
-    } else {
-      setTheme('light');
-    }
-  }
+  //Alterar o tema
 
   //Modal Aboutus
   const [isOpen, setIsOpen] = useState(false);
@@ -54,13 +44,11 @@ function App() {
 
 
   return (
-    <div className={`App ${theme}`}>
-      <head> <meta name="viewport" content="width=device-width,minium-scale=1.0, initical-scale=1.0, user-scalable=no " /></head>
+    <div className='App'>
       <header>
-
+        <Menu/>
       </header>
 
-      <button onClick={toggleTheme}>Alternar tema</button>
       <div className='aboutus'>
         <div className='aboutus--left'>
           <h4><p>ESCOTISMO DO MAR</p></h4>
@@ -69,7 +57,7 @@ function App() {
               O Escotismo do Mar procura desenvolver nos jovens o gosto pela vida no mar através de uma cultura
               marítima e de um espírito marinheiro, podendo também ser praticado em lagoas, represas, mares e
               rios.</p>
-            <p>
+            <p className='spant'>
               Pelas artes e técnicas marinheiras, pela navegação à vela e a motor, pelas viagens, pelos
               transportes marítimos, pela pesca, pelo estudo da oceanografia, pela exploração, pelos esportes
               submarinos e náuticos, incentivando o culto das tradições de nossa Marinha os Escoteiros do Mar
@@ -89,7 +77,7 @@ function App() {
                 transportes marítimos, pela pesca, pelo estudo da oceanografia, pela exploração, pelos esportes
                 submarinos e náuticos, incentivando o culto das tradições de nossa Marinha os Escoteiros do Mar
                 praticam o escotismo realizando também os acampamentos e excursões em terra.</p>
-              <p >
+              <p>
                 Além da divisão de tarefas na sede e no campo, os Escoteiros do Mar também dividem suas
                 responsabilidades nas guarnições em que participam das atividades embarcadas, reforçando assim
                 a execução do Sistema de Patrulhas Embarcado conforme a criação dos irmãos Robert e Warrington
@@ -107,6 +95,7 @@ function App() {
           <img src={about} alt='texto alt' />
         </div>
       </div>
+      
 
       <div className='List-Container'>
         <ul>
